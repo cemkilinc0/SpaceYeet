@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5463464804533774655}
   - component: {fileID: 2471028668229881231}
   - component: {fileID: 3347628389796450299}
-  m_Layer: 0
+  - component: {fileID: -9124006651651753920}
+  m_Layer: 11
   m_Name: laserRed03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,3 +122,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.09, y: 0.37}
   m_Direction: 0
+--- !u!114 &-9124006651651753920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572833314640572679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9519a6a5cde659f478b94d77b19f3ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25

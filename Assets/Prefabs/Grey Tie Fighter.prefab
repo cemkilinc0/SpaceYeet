@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: -8387294293412874436}
   - component: {fileID: -3374353507682673889}
   - component: {fileID: -3084148350864413294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grey Tie Fighter
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,12 +109,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d21e5c89bfec5b0489ceb6204713ec97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 300
+  deathVFX: {fileID: 7578881105403334892, guid: 9cdf9f1d85b6d7740aa945af18fd3cd1, type: 3}
+  durationOfExploation: 1
+  deathSFX: {fileID: 8300000, guid: 10439eb9d806f0c49a769e56bd1064c4, type: 3}
+  deathSoundVolume: 0.75
+  enemyLaser: {fileID: 6572833314640572679, guid: b08c7670d3bcf4940837eb64ed4198b2, type: 3}
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 3
-  enemyLaser: {fileID: 6572833314640572679, guid: b08c7670d3bcf4940837eb64ed4198b2, type: 3}
   laserSpeed: 5
+  shootSFX: {fileID: 8300000, guid: bcfcbe5d5e9c63747a4e03aa9cd1fa79, type: 3}
+  shootSoundVolume: 0.75
 --- !u!58 &-3084148350864413294
 CircleCollider2D:
   m_ObjectHideFlags: 0

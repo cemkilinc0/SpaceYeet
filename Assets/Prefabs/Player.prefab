@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3367045037380218650}
   - component: {fileID: 3367045037380218653}
   - component: {fileID: 3367045037380218651}
-  m_Layer: 0
+  - component: {fileID: 2320535452295781479}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e46124037f4a3ba46b6175c30effe146, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 10f95ba07b4ec564884c0ddcf2fe2570, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,6 +97,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  padding: 1
+  padding: 0.5
+  health: 200
+  deathSoundVolume: 0.75
+  deathSFX: {fileID: 8300000, guid: 10439eb9d806f0c49a769e56bd1064c4, type: 3}
+  laserPrefab: {fileID: 2175914153220145675, guid: dcb2a1dcdaaf5ba44add6ad6d4e7eeeb, type: 3}
   projectileSpeed: 10
-  laserPrefab: {fileID: 5694539078331762539, guid: 11bf352e61ca2ee4aa919213479b5037, type: 3}
+  projectileFiringPeriod: 0.07
+--- !u!60 &2320535452295781479
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3367045037380218652}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.75}
+    newSize: {x: 1.12, y: 0.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.48058766, y: 0.06510431}
+      - {x: 0.37108174, y: -0.042436086}
+      - {x: 0.125, y: 0.124422744}
+      - {x: 0.07254687, y: 0.37039295}
+      - {x: -0.090587795, y: 0.35196313}
+      - {x: -0.11137132, y: 0.11578509}
+      - {x: -0.35627759, y: -0.01793255}
+      - {x: -0.49499997, y: 0.04892627}
+      - {x: -0.45176327, y: -0.24499999}
+      - {x: -0.36735088, y: -0.22971138}
+      - {x: -0.13539179, y: -0.2535333}
+      - {x: -0.07365368, y: -0.35995623}
+      - {x: -0.095, y: -0.375}
+      - {x: 0.056959126, y: -0.37039295}
+      - {x: 0.13489783, y: -0.285}
+      - {x: 0.41176328, y: -0.22814035}
+      - {x: 0.4613714, y: -0.255}
