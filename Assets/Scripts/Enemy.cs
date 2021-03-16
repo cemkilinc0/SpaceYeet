@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float durationOfExploation = 1f;
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0, 1)] float deathSoundVolume = 0.75f;
+    [SerializeField] int scoreValue = 150;
 
     [Header("Enemy Projectile")]
     [SerializeField] GameObject enemyLaser;
@@ -71,6 +72,7 @@ public class Enemy : MonoBehaviour
 
     private void DieTrash()
     {
+        FindObjectOfType<GameSession>().AddToScore(scoreValue);
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, durationOfExploation);
