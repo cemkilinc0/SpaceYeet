@@ -17,8 +17,14 @@ public class Level : MonoBehaviour
 
     public void LoadGameOver()
     {
-        SceneManager.LoadScene("Game Over");
+        StartCoroutine(WaitAndLoad());
     }
+
+    IEnumerator WaitAndLoad()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Game Over");
+    } 
 
     public void QuitGame()
     {
