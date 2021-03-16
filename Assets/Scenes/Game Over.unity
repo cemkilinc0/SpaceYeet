@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 942127721, guid: e4fcb27ae7f55d747a0b9f317934a063, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3144579347723383457, guid: e4fcb27ae7f55d747a0b9f317934a063, type: 3}
       propertyPath: m_Name
       value: Game Canvas
